@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+    <style>
+        #map{
+            height: 600px;
+            background-color: #ccc;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="business_select">
+        <label for="business">
+            <select name="business" id="business">
+                <option value="pizza">Pizza</option>
+                <option value="coffee">Coffee</option>
+                <option value="chinese">Chinese</option>
+                <option value="burger">Burger</option>
+            </select>
+            <input type="submit" value="Submit"/>
+        </label>
+    </form>
+    <div id="map"></div>
+    <!--load scripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+    <script src="index.js"></script>
+</body>
+</html>
